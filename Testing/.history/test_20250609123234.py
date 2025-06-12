@@ -1,8 +1,8 @@
 maze = [
-    "         X",
-    "X     X  X",
-    "XXX XXXX X",
-    "XX      FX",
+    "         X"
+    "X     X  X"
+    "XXX XXXX X"
+    "XX      FX"
     "XXXXXXXXXX"
 ]
 
@@ -21,8 +21,10 @@ def findPath(maze,start=[0,0]):
             path.append([x,y])
             return True
 
-        path.append([x,y])
-        visited.add((x,y))
+        # Choose a direction to go down
+        if (x,y) not in visited:
+            path.append([x,y])
+            visited.add((x,y))
 
         # Attempt to find a solution
         if any([dfs(x + 1,y),dfs(x-1,y),dfs(x,y+1),dfs(x,y-1)]):

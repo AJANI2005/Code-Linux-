@@ -1,0 +1,4 @@
+
+
+
+print(list(a))

@@ -1,8 +1,8 @@
 maze = [
-    "         X",
-    "X     X  X",
-    "XXX XXXX X",
-    "XX      FX",
+    "         X"
+    "X     X  X"
+    "XXX XXXX X"
+    "XX      FX"
     "XXXXXXXXXX"
 ]
 
