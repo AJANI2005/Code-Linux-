@@ -18,7 +18,7 @@ def isMatch(s: str, p: str):
         if match:
             cache[(i,j)] = dfs(i+1,j+1)
             return cache[(i,j)]
-     
+        
         return False
 
     return dfs(0,0)
